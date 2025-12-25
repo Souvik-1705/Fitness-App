@@ -23,3 +23,8 @@
 .service-card:hover{
     background: #bd9806;
 }
+@media (max-width:768px) {
+    .service-cards{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
