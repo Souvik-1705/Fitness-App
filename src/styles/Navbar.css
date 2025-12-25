@@ -16,6 +16,7 @@ nav{
     text-decoration: none;
     color: black;
     font-size: 14px;
+    font-weight: bold;
 }
 .links a.active{
     color: brown;
@@ -40,6 +41,9 @@ nav{
         display: none;
         flex-direction: column;
         text-align: center;
+    }
+    .links a{
+        color: white;
     }
     .links.open{
         display: flex;
