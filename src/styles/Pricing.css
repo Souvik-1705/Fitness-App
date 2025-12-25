@@ -1,0 +1,7 @@
+.pricing{
+    padding: 60px 40px;
+    min-height: 80vh;
+}
+.pricing ul{
+    list-style: none;
+}

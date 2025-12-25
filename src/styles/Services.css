@@ -1,0 +1,25 @@
+.services{
+    padding: 60px 40px;
+    background:black;
+}
+.services h2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.service-cards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.service-card{
+    background: #facc15;
+    padding: 80px;
+    text-align: center;
+    color: black;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.service-card:hover{
+    background: #bd9806;
+}

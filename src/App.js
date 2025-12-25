@@ -1,23 +1,30 @@
-import logo from './logo.svg';
+import { BrowserRouter,Routes,Route } from 'react-router-dom';
 import './App.css';
+import Home from './pages/Home';
+import About from './pages/About';
+import ServicesPage from './pages/ServicePage';
+import Pricing from './pages/Pricing';
+import Contact from './pages/Contact';
+import Navbar from './components/Navbar';
+import WhatsAppButton from './components/WhatsAppButton';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path='/'element={<Home/>}/>
+        <Route path='/about'element={<About/>}/>
+        <Route path='/services'element={<ServicesPage/>}/>
+        <Route path='/pricing'element={<Pricing/>}/>
+        <Route path='/contact'element={<Contact/>}/>
+      </Routes>
+      <Footer/>
+      <WhatsAppButton/>
+      </BrowserRouter>
     </div>
   );
 }
